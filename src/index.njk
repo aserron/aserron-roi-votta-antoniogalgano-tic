@@ -288,7 +288,7 @@ robots: "index, follow"
       </p>
 
       <div class="hero-btns">
-        <a href="/glossary" class="btn-solid">Explorar Ecosistema</a>
+        <a href="/articulos" class="btn-solid">Ver Artículos</a>
         <a href="#contacto" class="btn-ghost">Solicitar Asesoría</a>
       </div>
 
@@ -344,25 +344,25 @@ robots: "index, follow"
 </section>
 
 <!-- ═══ GLOSARIO STARTUPS ═════════════════════════════════════════════ -->
-<section class="glossary-preview">
-  <div class="glossary-preview-inner">
+<section class="articulos-preview">
+  <div class="articulos-preview-inner">
     <div class="section-eyebrow">Ecosistema TIC Uruguay</div>
-    <h2 class="glossary-preview-heading">Glosario Startups</h2>
-    <p class="glossary-preview-desc">
-      Términos clave del ecosistema emprendedor tecnológico de Uruguay: financiamiento, marco legal,
+    <h2 class="articulos-preview-heading">Artículos</h2>
+    <p class="articulos-preview-desc">
+      Artículos sobre el ecosistema emprendedor tecnológico de Uruguay: financiamiento, marco legal,
       infraestructura, talento y estrategia operacional para tu startup.
     </p>
-    <div class="glossary-preview-grid">
-      {%- for term in collections.glossary | limit(3) %}
-      <a href="/glossary/{{ term.data.slug }}" class="glossary-card reveal reveal-delay-{{ loop.index }}">
-        <div class="glossary-card-cat">{{ term.data.category }}</div>
-        <div class="glossary-card-term">{{ term.data.term }}</div>
-        <p class="glossary-card-def">{{ term.data.metaDescription }}</p>
+    <div class="articulos-preview-grid">
+      {%- for term in collections.articulos | limit(3) %}
+      <a href="/articulos/{{ term.data.slug }}" class="articulos-card reveal reveal-delay-{{ loop.index }}">
+        <div class="articulos-card-cat">{{ term.data.category }}</div>
+        <div class="articulos-card-term">{{ term.data.term }}</div>
+        <p class="articulos-card-def">{{ term.data.metaDescription }}</p>
       </a>
       {%- endfor %}
     </div>
     <div style="margin-top: 3rem; text-align: center;">
-      <a href="/glossary" class="btn-ghost">Ver todos los términos →</a>
+      <a href="/articulos" class="btn-ghost">Ver todos los artículos →</a>
     </div>
   </div>
 </section>

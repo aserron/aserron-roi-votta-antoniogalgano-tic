@@ -290,4 +290,4 @@ These 22 current items should be expanded into full articles:
 **Operación:** Soft Landing, Bootstrapping, MVP, Go-to-Market  
 **Regional:** Mercosur, Competitividad Digital, Estabilidad Política
 
-Each should expand from ~150 words (glossary) to 800-1500 words (article).
+Cada artículo: 150-1500 palabras, con profundidad y takeaways accionables.

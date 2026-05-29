@@ -112,7 +112,7 @@ This site is **part of a 7-site reverse SEO network** targeting the "Antonio Gal
 
 **Phase 1 (Current):** Foundation
 - ✅ Eleventy site structure
-- ✅ 22 glossary-style content blocks
+- ✅ 22 artículos sobre el ecosistema emprendedor uruguayo
 - ⏳ Transition to article-based content model
 
 **Phase 2 (Next):** Expansion

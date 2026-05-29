@@ -87,40 +87,40 @@
   }
 
   /* Glossary Page */
-  .glossary-page {
+  .articulos-page {
     @apply min-h-screen py-12 px-8;
   }
 
-  .glossary-container {
+  .articulos-container {
     @apply max-w-4xl mx-auto;
   }
 
-  .glossary-title {
+  .articulos-title {
     font-size: clamp(2rem, 6vw, 3rem);
     @apply font-bold mb-2 text-text-bright;
   }
 
-  .glossary-description {
+  .articulos-description {
     @apply text-text mb-8 max-w-2xl;
   }
 
-  .glossary-search {
+  .articulos-search {
     @apply mb-8;
   }
 
-  .glossary-search input {
+  .articulos-search input {
     @apply w-full px-4 py-3 bg-bg-raised border rounded-lg;
     border-color: var(--border);
     color: var(--text);
     @apply placeholder-text-mid;
   }
 
-  .glossary-search input:focus {
+  .articulos-search input:focus {
     @apply outline-none;
     border-color: var(--cyan);
   }
 
-  .glossary-section {
+  .articulos-section {
     @apply mb-12;
   }
 
@@ -129,16 +129,16 @@
     @apply font-semibold mb-6 text-cyan;
   }
 
-  .glossary-items {
+  .articulos-items {
     @apply space-y-6;
   }
 
-  .glossary-item {
+  .articulos-item {
     @apply p-6 bg-bg-raised rounded-lg;
     border: 1px solid var(--border);
   }
 
-  .glossary-item:hover {
+  .articulos-item:hover {
     border-color: var(--border-cyan);
   }
 
@@ -432,42 +432,42 @@
   }
 
   /* ── GLOSSARY PREVIEW (home) ─────────── */
-  .glossary-preview {
+  .articulos-preview {
     @apply py-24 px-8;
     background: var(--bg-raised);
   }
-  .glossary-preview-inner {
+  .articulos-preview-inner {
     @apply max-w-6xl mx-auto;
   }
-  .glossary-preview-heading {
+  .articulos-preview-heading {
     @apply text-4xl font-mono font-bold mb-4;
     color: var(--text-bright);
   }
-  .glossary-preview-desc {
+  .articulos-preview-desc {
     @apply text-lg mb-12;
     color: var(--text);
   }
-  .glossary-preview-grid {
+  .articulos-preview-grid {
     @apply grid gap-6;
     grid-template-columns: repeat(3, 1fr);
   }
-  .glossary-card {
+  .articulos-card {
     @apply p-6 rounded-lg border block no-underline transition-all;
     background: var(--bg-card);
     border-color: var(--border);
   }
-  .glossary-card:hover {
+  .articulos-card:hover {
     border-color: var(--border-cyan);
   }
-  .glossary-card-cat {
+  .articulos-card-cat {
     @apply text-xs font-mono uppercase tracking-wider mb-3;
     color: var(--cyan);
   }
-  .glossary-card-term {
+  .articulos-card-term {
     @apply text-lg font-semibold mb-3;
     color: var(--text-bright);
   }
-  .glossary-card-def {
+  .articulos-card-def {
     @apply text-sm leading-relaxed;
     color: var(--text);
   }
@@ -561,7 +561,7 @@
   .hero-inner-2col,
   .about-inner,
   .services-grid,
-  .glossary-preview-grid {
+  .articulos-preview-grid {
     grid-template-columns: 1fr;
   }
 

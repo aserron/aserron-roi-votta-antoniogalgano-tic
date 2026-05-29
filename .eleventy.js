@@ -8,8 +8,8 @@ module.exports = function (eleventyConfig) {
     return _content;
   });
 
-  eleventyConfig.addCollection('glossary', (api) =>
-    api.getFilteredByGlob('src/glossary/terms/*.md').sort((a, b) => a.data.term.localeCompare(b.data.term, 'es'))
+  eleventyConfig.addCollection('articulos', (api) =>
+    api.getFilteredByGlob('src/articulos/terms/*.md').sort((a, b) => a.data.term.localeCompare(b.data.term, 'es'))
   );
 
   eleventyConfig.addFilter('groupByCategory', (terms) =>

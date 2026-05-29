@@ -36,7 +36,7 @@ antoniogalgano-tic/
 │   │   ├── humans.txt              # Team/credits
 │   │   └── favicon files           # Site icons
 │   │
-│   ├── articles/                   # Content hub (FUTURE - replaces glossary)
+│   ├── articles/                   # Content hub (FUTURE - replaces Artículos)
 │   │   ├── index.njk               # Article archive listing
 │   │   ├── ecosistema/
 │   │   │   ├── index.njk           # Category landing
@@ -52,12 +52,12 @@ antoniogalgano-tic/
 │   │   ├── talento/
 │   │   └── operacion/
 │   │
-│   ├── glossary/                   # CURRENT (being phased out)
-│   │   ├── index.njk               # Glossary archive
+│   ├── articulos/                   # CURRENT
+│   │   ├── index.njk               # Artículos archive
 │   │   └── terms/
 │   │       ├── ande.md
 │   │       ├── anni.md
-│   │       └── [22 total terms]
+│   │       └── [22 artículos total]
 │   │
 │   ├── index.njk                   # Homepage
 │   ├── 404.njk                     # 404 page
@@ -68,9 +68,9 @@ antoniogalgano-tic/
 │   ├── 404.html
 │   ├── css/
 │   │   └── styles.css              # Compiled Tailwind
-│   ├── glossary/
+│   ├── articulos/
 │   │   ├── index.html
-│   │   └── [22 term HTML files]
+│   │   └── [22 artículos HTML]
 │   ├── articles/                   # (Future output)
 │   ├── .htaccess
 │   ├── robots.txt
@@ -97,21 +97,21 @@ antoniogalgano-tic/
 
 ---
 
-## Content Organization: Articles vs Glossary
+## Content Organization: Artículos
 
-### Current State (Glossary)
+### Current State (Artículos)
 ```
-src/glossary/
+src/articulos/
 ├── index.njk                  # Lists all 22 terms
 └── terms/
-    ├── ande.md               # 100-200 word definitions
+    ├── ande.md               # 150-1500 word articles
     ├── anni.md
     └── [20 more terms]
 
-URL pattern: /glossary/[term-slug].html
+URL pattern: /articulos/[term-slug].html
 ```
 
-### Future State (Articles)
+### Expansión Futura
 ```
 src/articles/
 ├── index.njk                  # Article archive with categories
@@ -136,7 +136,7 @@ URL pattern: /articles/[category]/[article-slug].html
 
 ### Current
 ```javascript
-collections.glossary  → All files in src/glossary/terms/*.md
+collections.articulos  → All files in src/articulos/terms/*.md
 ```
 
 ### Future
@@ -167,7 +167,7 @@ public_html/
 
 ### .eleventy.js
 - Entry point for Eleventy build
-- Defines collections (glossary → articles)
+- Defines collections (articulos)
 - Configures output paths
 - Sets up Nunjucks filters & tags
 
@@ -233,8 +233,8 @@ npm run build
 ### Current URLs
 ```
 /                          → Homepage
-/glossary                  → Glossary archive (22 terms)
-/glossary/[term-slug]      → Individual term page
+/articulos                  → Artículos archive (22 artículos)
+/articulos/[term-slug]      → Individual term page
 /404.html                  → 404 page
 /sitemap.xml               → XML sitemap
 /robots.txt                → Search engine rules
@@ -255,11 +255,11 @@ npm run build
 
 | Artifact | Size | Notes |
 |----------|------|-------|
-| public_html/ (total) | ~250KB | 26 files after glossary phase |
+| public_html/ (total) | ~250KB | 26 files fase artículos |
 | index.html | 26KB | Homepage with schema |
-| glossary/index.html | 12KB | Archive listing |
+| articulos/index.html | 12KB | Archive listing |
 | CSS (minified) | 15-20KB | Tailwind compiled |
-| Single glossary term | 3-5KB | Average per-page |
+| Artículo individual | 3-5KB | Average per-page |
 
 ---
 
@@ -288,5 +288,5 @@ npm run build
 
 Files served to web:
 - `public_html/index.html` → `/`
-- `public_html/glossary/ande.html` → `/glossary/ande`
+- `public_html/articulos/ande.html` → `/articulos/ande`
 - `public_html/articles/ecosistema/ande-financiamiento.html` → `/articles/ecosistema/ande-financiamiento`

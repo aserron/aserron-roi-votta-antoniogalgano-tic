@@ -8,5 +8,5 @@
     "prefer-const": "error",
     "eqeqeq": "error"
   },
-  "ignorePatterns": ["node_modules/", "public_html/", "src/glossary/"]
+  "ignorePatterns": ["node_modules/", "public_html/", "src/articulos/"]
 }

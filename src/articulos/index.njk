@@ -1,0 +1,102 @@
+---
+layout: layouts/base.njk
+pageTitle: "Artículos Startups TIC Uruguay — Ecosistema Emprendedor | Antonio Galgano Votta"
+metaDescription: "Artículos sobre el ecosistema emprendedor TIC en Uruguay: financiamiento, marco legal, infraestructura, talento y operación de startups."
+canonical: "https://antoniogalgano-tic.com/articulos"
+ogTitle: "Artículos Startups TIC Uruguay — Antonio Galgano Votta"
+ogDescription: "Aprende sobre el ecosistema emprendedor de Uruguay: ANDE, ANNI, SAS, financiamiento, infraestructura y talento TIC."
+ogUrl: "https://antoniogalgano-tic.com/articulos"
+permalink: /articulos/index.html
+---
+
+{% set groupedTerms = collections.articulos | groupByCategory %}
+
+{% block schemaTags %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Artículos Startups TIC Uruguay",
+        "description": "Artículos sobre el ecosistema emprendedor tecnológico de Uruguay: financiamiento, marco legal, infraestructura, talento y operación de startups.",
+        "url": "https://antoniogalgano-tic.com/articulos",
+        "itemListElement": [
+            {% for term in collections.articulos -%}
+            {
+                "@type": "ListItem",
+                "position": {{ loop.index }},
+                "name": "{{ term.data.term }}",
+                "url": "https://antoniogalgano-tic.com/articulos/{{ term.data.slug }}"
+            }{{ "," if not loop.last }}
+            {%- endfor %}
+        ]
+    }
+</script>
+{% endblock %}
+
+<main class="articulos-page">
+    <div class="articulos-container">
+        <header style="padding: 4rem 2rem 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2rem;">
+          <div class="section-eyebrow">Ecosistema TIC Uruguay</div>
+          <h1 class="articulos-title">Artículos</h1>
+          <p class="articulos-description">
+            Artículos sobre el ecosistema emprendedor tecnológico de Uruguay: financiamiento, marco legal, infraestructura,
+            talento y estrategia operacional — explicados para emprendedores y fundadores.
+          </p>
+        </header>
+
+        <div class="articulos-search">
+            <input type="text" id="articulos-search" placeholder="Buscar artículo..." aria-label="Buscar en artículos">
+        </div>
+
+        <div class="articulos-content">
+            {% for category, terms in groupedTerms | dictsort %}
+            <section class="articulos-section" data-category="{{ terms[0].data.categorySlug }}">
+                <h2 class="category-title">{{ category }}</h2>
+                <div class="articulos-items">
+                    {% for term in terms %}
+                    <article class="articulos-item" data-term="{{ term.data.slug }}" data-category="{{ term.data.category }}">
+                        <h3 class="term-heading">
+                            <a href="/articulos/{{ term.data.slug }}">{{ term.data.term }}</a>
+                        </h3>
+                        <p class="term-definition">
+                            {{ term.templateContent | safe }}
+                        </p>
+                    </article>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endfor %}
+        </div>
+
+        <section style="padding: 4rem 2rem; border-top: 1px solid var(--border); text-align: center; margin-top: 4rem;">
+          <h2 style="font-size: 2rem; font-family: 'IBM Plex Mono', monospace; color: var(--text-bright); margin-bottom: 1rem;">
+            ¿Planeas tu startup en Uruguay?
+          </h2>
+          <p style="font-size: 1.125rem; color: var(--text); max-width: 40rem; margin: 0 auto 2rem; line-height: 1.7;">
+            Disponible para asesoría especializada en TIC, estrategia de startup, y navegación del ecosistema uruguayo.
+          </p>
+          <a href="https://www.linkedin.com/in/antonio-galgano-votta-713b523a7/"
+             target="_blank" rel="noopener noreferrer" class="btn-solid">
+            Solicitar Asesoría
+          </a>
+        </section>
+    </div>
+</main>
+
+<script>
+    const searchInput = document.getElementById('articulos-search');
+    const articulosItems = document.querySelectorAll('.articulos-item');
+
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+
+        articulosItems.forEach(item => {
+            const itemText = item.textContent.toLowerCase();
+            if (itemText.includes(searchTerm)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+</script>
