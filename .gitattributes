@@ -1,5 +1,5 @@
-# Force LF line endings for all text files on all platforms
-* text=auto eol=lf
+# Auto-detect text files and normalize line endings
+* text=auto
 
 # Binary files — no EOL conversion
 *.png binary
