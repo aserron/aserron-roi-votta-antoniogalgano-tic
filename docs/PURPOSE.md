@@ -35,11 +35,11 @@ The site provides depth and authority on the startup ecosystem, financing, legal
 
 ## Content Philosophy
 
-**Authority over brevity.** Each article explores a topic in depth:
-- Not definitions, but actionable guidance
+**Authority over brevity.** Current artículos and future expanded articles:
+- Not quick definitions, but actionable guidance
 - Not summaries, but substantive research
-- Not glossary entries, but thought pieces
-- Each article: 800-1500 words, with practical takeaways
+- Depth-focused exploration for founders
+- Current: 150-1500 words; Future expanded: 800-1500 words minimum
 
 **SEO-driven but human-first.** Content serves search intent while maintaining readership quality.
 

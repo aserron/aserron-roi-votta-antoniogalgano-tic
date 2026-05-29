@@ -278,16 +278,25 @@ Before publishing, verify:
 
 ---
 
-## Examples of Existing Glossary Terms (Baseline)
+## Current Artículos (Live)
 
-These 22 current items should be expanded into full articles:
+22 current artículos published at `/articulos/[slug]`:
 
-**Ecosistema:** ANDE, ANNI, Endeavor Uruguay, Sinergia  
-**Marco Legal:** SAS, Zona Franca, Ley de Startups, Sociedad por Acciones Simplificada  
-**Financiamiento:** Capital Semilla, Ángel Inversor, Venture Capital, Crowdfunding  
-**Infraestructura TIC:** Datacenter Tier III, Fibra Óptica, ANTEL  
-**Talento:** Pool Tecnológico, Universidad ORT, UTEC  
-**Operación:** Soft Landing, Bootstrapping, MVP, Go-to-Market  
-**Regional:** Mercosur, Competitividad Digital, Estabilidad Política
+**Ecosistema:** ANDE, ANNI, Acelerador, Incubadora, Pitch  
+**Marco Legal:** SAS, Zona Franca, Competitividad Digital  
+**Financiamiento:** Capital Semilla, Ángel Inversor, Venture Capital, Crowdfunding, Bootstrapping  
+**Infraestructura TIC:** Datacenter Uruguay, Fibra Óptica, UTEC  
+**Talento:** Pool Tecnológico  
+**Operación:** Soft Landing, MVP, Go-to-Market, Mercosur, Estabilidad Política  
 
-Cada artículo: 150-1500 palabras, con profundidad y takeaways accionables.
+**Current format:** 150-1500 palabras, con profundidad y takeaways accionables.
+
+---
+
+## Expansion Roadmap
+
+These 22 artículos will be expanded into categorized full-length pieces:
+
+**Target:** Migrate from `/articulos/[slug]` to `/articles/[category]/[slug]` with 800-1500 word minimum depth.
+
+Maintain current artículos for SEO continuity while new expanded versions coexist at new URLs.
