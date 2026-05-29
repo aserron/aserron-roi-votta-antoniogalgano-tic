@@ -1,0 +1,63 @@
+/* humanstxt.org */
+
+/* TEAM */
+Name: Antonio Galgano Votta
+Title: Consultor IT & Ciberseguridad
+Contact: aserron.dev@gmail.com
+LinkedIn: https://www.linkedin.com/in/antonio-galgano-votta-713b523a7/
+Twitter: https://x.com/AntonioGalganoV
+Location: Uruguay
+
+Name: Development Team
+Role: Technical Infrastructure & Security Implementation
+Contact: aserron.dev@gmail.com
+
+/* SITE */
+Last Update: 2026-05-25
+Language: Spanish / English
+Charset: UTF-8
+Standards: HTML5, CSS3, JSON-LD Schema.org
+
+/* TECHNOLOGY STACK */
+Hosting: Apache / cPanel
+Static Site: No Database Required
+Frontend: Vanilla HTML5 + CSS3 (Tailwind CSS)
+Build Tools: npm, Tailwind CSS Compiler, Eleventy (11ty) SSG
+Version Control: Git
+Security: HTTPS/TLS 1.2+, HSTS
+
+/* INFRASTRUCTURE SECURITY */
+Web Server: Apache 2.4+
+SSL/TLS: Let's Encrypt
+Certificate: Valid HTTPS
+Compression: gzip enabled
+Caching: HTTP/1.1 Cache-Control headers
+Security Headers: CSP, X-Frame-Options, X-Content-Type-Options
+
+/* BRAND NETWORK */
+Related Sites:
+- https://antoniogalgano.com (Consultoría Global)
+- https://antoniogalgano.es (Servicios España)
+- https://antoniogalgano.net (Inteligencia de Seguridad)
+- https://antoniogalganovotta.com (Infraestructura Crítica)
+- https://antoniogalganovotta.es (Infraestructura España)
+- https://antonio-galgano-votta.com (Seguridad Digital Educativa)
+
+/* EXPERTISE */
+Specializations:
+- Infraestructura Digital Segura
+- Automatización de Seguridad
+- Consultoría de Ciberseguridad Empresarial
+- Análisis de Riesgos
+- Cumplimiento Normativo
+- Evaluaciones de Seguridad
+- Hardening de Infraestructura
+
+Experience: 10+ años en Tecnologías de la Información y Ciberseguridad
+
+/* THANKS */
+Thanks to open-source community for:
+- Tailwind CSS (utility-first CSS framework)
+- Eleventy (11ty) (static site generator)
+- Schema.org (structured data vocabulary)
+- Google Fonts & Open Source Community

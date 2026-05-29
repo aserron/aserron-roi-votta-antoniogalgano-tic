@@ -1,0 +1,54 @@
+# Antonio Galgano Votta - Consultor IT & Ciberseguridad
+# SEO & Crawler Configuration
+# Last Updated: 2026-05-25
+
+# ═══════════════════════════════════════════════════════════
+# GENERAL CRAWLER RULES
+# ═══════════════════════════════════════════════════════════
+
+User-agent: *
+Allow: /
+Allow: /.well-known/security.txt
+Allow: /humans.txt
+
+# Disallow: (none - all content publicly accessible)
+
+# ═══════════════════════════════════════════════════════════
+# CRAWL DELAY & RATE
+# ═══════════════════════════════════════════════════════════
+
+# Allow aggressive crawling for major search engines
+# This static site has minimal server load
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Crawl-delay: 0
+
+# ═══════════════════════════════════════════════════════════
+# SITE MAP & DISCOVERY
+# ═══════════════════════════════════════════════════════════
+
+Sitemap: https://antoniogalgano-votta.com/sitemap.xml
+
+# Additional Resources for Crawlers
+# Security Policy: https://antoniogalgano-votta.com/.well-known/security.txt
+# Human Credits: https://antoniogalgano-votta.com/humans.txt
+
+# ═══════════════════════════════════════════════════════════
+# SECURITY NOTES
+# ═══════════════════════════════════════════════════════════
+
+# This site is a static HTML property with:
+# - No database or dynamic content
+# - HTTPS/TLS 1.2+ enforced
+# - Content Security Policy enabled
+# - Security headers configured
+# - Infrastructure: Apache/cPanel
+#
+# For security inquiries or vulnerability disclosure:
+# Contact: aserron.dev@gmail.com
+# Policy: https://antoniogalgano-votta.com/.well-known/security.txt

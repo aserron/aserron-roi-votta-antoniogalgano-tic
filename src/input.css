@@ -1,0 +1,148 @@
+/* ── GOOGLE FONTS (Cached CDN) ──────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── DESIGN TOKENS ──────────────────────────────────────────────────── */
+:root {
+  --bg: #07080f;
+  --bg-raised: #0c0e1c;
+  --bg-card: #0f1120;
+  --cyan: #00d8ff;
+  --amber: #ffd166;
+  --emerald: #34d399;
+  --text: #8ea3be;
+  --text-mid: #c1cfe0;
+  --text-bright: #e8f0fe;
+  --border: rgba(255, 255, 255, 0.06);
+  --border-cyan: rgba(0, 216, 255, 0.22);
+  --accent: #ff6b35;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text antialiased;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.65;
+  }
+
+  .mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+@layer components {
+  /* Hero Section */
+  .hero {
+    @apply relative min-h-screen flex items-center justify-center px-8 py-12 overflow-hidden;
+    background: linear-gradient(135deg, var(--bg) 0%, var(--bg-raised) 100%);
+  }
+
+  .hero::before {
+    content: '';
+    @apply absolute -top-1/2 -right-1/2 w-full h-full;
+    background: radial-gradient(circle, rgba(52, 211, 153, 0.05) 0%, transparent 70%);
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .hero-inner {
+    @apply relative z-10 max-w-3xl text-center;
+  }
+
+  .hero-content {
+    animation: fadeInUp 1s ease-out 0.2s both;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    @apply font-bold mb-2 leading-tight tracking-tight;
+  }
+
+  .hero-name {
+    background: linear-gradient(135deg, var(--cyan) 0%, var(--emerald) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    @apply text-text-mid mb-6 font-medium;
+  }
+
+  .hero-status {
+    @apply text-2xl font-semibold mb-6 uppercase tracking-widest;
+    color: var(--accent);
+  }
+
+  .hero-description {
+    @apply text-lg max-w-2xl mx-auto mb-8;
+    line-height: 1.8;
+  }
+
+  /* Footer */
+  .site-footer {
+    @apply bg-bg-card border-t py-12 px-8;
+    border-color: var(--border);
+  }
+
+  .footer-inner {
+    @apply max-w-4xl mx-auto space-y-8;
+  }
+
+  .footer-copy {
+    @apply text-text-mid text-sm;
+  }
+
+  .footer-network {
+    @apply space-y-4;
+  }
+
+  .network-label {
+    @apply block text-text-bright font-medium mb-3;
+  }
+
+  .footer-network ul {
+    @apply flex flex-wrap gap-4;
+  }
+
+  .footer-network a {
+    @apply text-text-mid hover:text-cyan transition-colors text-sm;
+  }
+
+  .footer-social {
+    @apply flex gap-6;
+  }
+
+  .footer-social a {
+    @apply text-text-mid hover:text-cyan transition-colors text-sm font-medium;
+  }
+}
+
+/* ── ANIMATIONS ──────────────────────────────────────────────────── */
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, -30px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

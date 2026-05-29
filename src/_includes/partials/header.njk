@@ -1,0 +1,15 @@
+<header>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="{{ site.name }} — Inicio">AGV</a>
+      <ul class="nav-links" role="list">
+        <li><a href="/#sobre" class="nav-link">Sobre mí</a></li>
+        <li><a href="/#servicios" class="nav-link">Servicios</a></li>
+        <li>
+          <a href="/glossary" class="nav-link{% if '/glossary' in page.url %} active{% endif %}">Glosario TIC</a>
+        </li>
+        <li><a href="/#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

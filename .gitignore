@@ -141,3 +141,24 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# ═══════════════════════════════════════════════════════════
+# Eleventy + Tailwind CSS build artifacts
+# ═══════════════════════════════════════════════════════════
+
+# Generated HTML files (from Eleventy)
+public_html/index.html
+public_html/404.html
+public_html/glossary.html
+public_html/glossary/
+public_html/sitemap.xml
+
+# Generated CSS (from Tailwind)
+public_html/css/styles.css
+
+# Static files passthrough (from src/static/)
+public_html/.htaccess
+public_html/robots.txt
+public_html/manifest.json
+public_html/humans.txt
+public_html/.well-known/

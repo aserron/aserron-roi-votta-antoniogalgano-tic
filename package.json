@@ -1,0 +1,32 @@
+{
+  "name": "antoniogalgano-tic",
+  "version": "1.0.0",
+  "description": "Antonio Galgano Votta - Consultor TIC Uruguay | Startups & Tecnología",
+  "private": true,
+  "scripts": {
+    "build:11ty": "eleventy",
+    "build:css": "tailwindcss -i src/css/input.css -o public_html/css/styles.css --minify",
+    "build": "npm run build:11ty && npm run build:css",
+    "dev": "concurrently \"eleventy --serve --port=8080\" \"tailwindcss -i src/css/input.css -o public_html/css/styles.css --watch\"",
+    "lint:js": "eslint \".eleventy.js\" \"src/_data/**/*.js\" \"scripts/**/*.js\"",
+    "lint:html": "html-validate \"public_html/**/*.html\"",
+    "lint": "npm run lint:js && npm run lint:html",
+    "format": "prettier --write \"src/**/*.{md,js,css,json}\" \".eleventy.js\"",
+    "format:check": "prettier --check \"src/**/*.{md,js,css,json}\" \".eleventy.js\"",
+    "check": "npm run format:check && npm run lint:js",
+    "build:favicons": "node scripts/tools/generate-favicons.js",
+    "setup:fonts": "node scripts/setup-fonts.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.1",
+    "html-validate": "^9.7.1",
+    "prettier": "^3.8.3",
+    "sharp": "^0.33.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

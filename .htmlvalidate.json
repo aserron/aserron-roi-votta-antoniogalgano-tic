@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "doctype-style": "error",
+    "no-missing-references": "error",
+    "require-sri": "off",
+    "aria-label-misuse": "error",
+    "heading-level": "error",
+    "meta-refresh": "error",
+    "no-dup-id": "error",
+    "attr-quotes": "error",
+    "no-inline-style": "off"
+  },
+  "elements": ["html5"]
+}

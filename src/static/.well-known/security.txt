@@ -1,0 +1,38 @@
+Contact: mailto:aserron.dev@gmail.com
+Contact: https://www.linkedin.com/in/antonio-galgano-votta-713b523a7/
+Expires: 2027-05-25T00:00:00.000Z
+Preferred-Languages: es, en
+Canonical: https://antoniogalgano-votta.com/.well-known/security.txt
+
+# Security Policy for antoniogalgano-votta.com
+# Antonio Galgano Votta - Consultor IT & Ciberseguridad
+
+# This file provides information for security researchers and vulnerability disclosure.
+# For infrastructure and security consulting inquiries, contact via LinkedIn.
+
+# Security Expertise Areas:
+# - Infraestructura Digital Segura
+# - Automatización de Seguridad
+# - Consultoría de Ciberseguridad Empresarial
+# - Análisis de Riesgos de Seguridad
+# - Cumplimiento Normativo (Regulatorio)
+
+# Site Security:
+# - HTTPS/TLS enabled (enforced across all content)
+# - Content Security Policy enabled
+# - X-Frame-Options: DENY (clickjacking protection)
+# - X-Content-Type-Options: nosniff (MIME-type sniffing prevention)
+# - Secure cookie attributes (HttpOnly, Secure, SameSite)
+# - HSTS preload ready
+
+# Infrastructure:
+# - Static site (Apache/cPanel hosting)
+# - Gzip compression enabled
+# - Browser caching configured (1yr for images, 1mo for CSS/JS, 1hr for HTML)
+# - No database or CMS vulnerabilities (static HTML)
+# - CDN-ready architecture
+
+# Vulnerability Disclosure:
+# While this is a static site with minimal attack surface, security researchers
+# can report any findings to: aserron.dev@gmail.com
+# Please allow 7 days for response.

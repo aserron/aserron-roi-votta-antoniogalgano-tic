@@ -1,0 +1,22 @@
+<!-- ═══ FOOTER ════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-copy">&copy; {{ site.currentYear }} {{ site.name }}. Todos los derechos reservados.</div>
+        <nav class="footer-network" aria-label="Red Profesional de {{ site.name }}">
+            <span class="network-label">Red Profesional de {{ site.name }}:</span>
+            <ul>
+                <li><a href="/" title="Inicio">Inicio</a></li>
+                <li><a href="/glossary" title="Glosario de Tecnologías de la Información">Glosario TIC</a></li>
+                {% for item in site.network %}
+                <li><a href="{{ item.href }}" target="_blank" rel="noopener noreferrer"
+                       title="{{ item.title }}">{{ item.label }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/antonio-galgano-votta-713b523a7/" target="_blank"
+               rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com/{{ site.twitter | replace('@', '') }}" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+        </div>
+    </div>
+</footer>
